@@ -9,9 +9,6 @@ on:
 jobs:
   Node-CI-pipeline:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        os: [windows-latest, ubuntu-latest]
     steps:
       - uses: actions/checkout@v7
       - name: Setup Node.js environment
